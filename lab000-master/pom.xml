@@ -6,7 +6,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.2.3</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
     <groupId>edu.penzgtu</groupId>
     <artifactId>shopsandshopkeepers</artifactId>
@@ -47,7 +47,7 @@
         <dependency>
             <groupId>javax.annotation</groupId>
             <artifactId>javax.annotation-api</artifactId>
-            <version>1.3.2</version> <!-- Версия может отличаться -->
+            <version>1.3.2</version>
         </dependency>
         <dependency>
             <groupId>org.springdoc</groupId>
