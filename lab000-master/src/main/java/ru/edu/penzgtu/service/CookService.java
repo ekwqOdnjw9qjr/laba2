@@ -32,11 +32,11 @@ public class CookService {
         cookRepository.save(cook);
     }
 
-    public void updateCook(CookDto newArtist) {
-        Cook oldCook = cookRepository.findById(newArtist.getId())
+    public void updateCook(CookDto newCook) {
+        Cook oldCook = cookRepository.findById(newCook.getId())
 
                 .orElseThrow(() ->new RuntimeException("Cook not found"));
-        oldCook.setName(newArtist.getName());
+        oldCook.setName(newCook.getName());
         cookRepository.save(oldCook);
 
     }

@@ -32,13 +32,10 @@ public class RestaurantService {
         restaurantRepository.save(restaurant);
     }
 
-    public void updateRestaurant(RestaurantDto newPicture) {
-        Restaurant oldRestaurant = restaurantRepository.findById(newPicture.getId())
+    public void updateRestaurant(RestaurantDto newRestaurant) {
+        Restaurant oldRestaurant = restaurantRepository.findById(newRestaurant.getId())
                 .orElseThrow(() -> new RuntimeException("Restaurant not found"));
-
-
-        oldRestaurant.setName(newPicture.getName());
-
+        oldRestaurant.setName(newRestaurant.getName());
         restaurantRepository.save(oldRestaurant);
     }
 
